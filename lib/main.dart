@@ -1,4 +1,7 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
+import 'package:whatsapp_ui/colors.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,8 +17,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'WhatsApp UI',
       theme: ThemeData.dark().copyWith(
-        
+        backgroundColor: backgroundColor,
       ),
+      home: const Text('Hello World'),
     );
   }
 }
