@@ -10,6 +10,7 @@ class MobileScreenLayout extends StatelessWidget {
       length: 3, 
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: appBarColor,
           title: const Text('WhatsApp', style: TextStyle(
             color: Colors.grey,
             fontSize: 20,
@@ -27,7 +28,6 @@ class MobileScreenLayout extends StatelessWidget {
             unselectedLabelColor: Colors.grey,
             labelStyle: TextStyle(
               fontWeight: FontWeight.bold,
-              
             ),
             tabs: [
             Tab(text: 'CHATS',),
@@ -35,6 +35,7 @@ class MobileScreenLayout extends StatelessWidget {
             Tab(text: 'CALLS',),
           ])
         ),
+        body: Text('Mobile view'),
       ),
       );
   }
