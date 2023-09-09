@@ -11,6 +11,7 @@ class MobileScreenLayout extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: appBarColor,
+          elevation: 0,
           title: const Text('WhatsApp', style: TextStyle(
             color: Colors.grey,
             fontSize: 20,
