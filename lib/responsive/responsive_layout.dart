@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class ResponsiveLayout extends StatelessWidget {
 
   final Widget mobileScreenLayout;
