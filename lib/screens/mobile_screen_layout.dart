@@ -36,7 +36,7 @@ class MobileScreenLayout extends StatelessWidget {
             Tab(text: 'CALLS',),
           ])
         ),
-        body: Text('Mobile view'),
+        body: const Text('Mobile view'),
       ),
       );
   }
