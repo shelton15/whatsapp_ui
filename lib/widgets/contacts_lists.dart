@@ -12,14 +12,23 @@ class ContactsList extends StatelessWidget {
         itemCount: info.length,
         itemBuilder: (context, index) {
           return ListTile(
-            title: Text(info[index]['name'].toString(),style: const TextStyle(fontSize: 18),),
+            title: Text(
+              info[index]['name'].toString(),
+              style: const TextStyle(fontSize: 18),),
             subtitle: Padding(
               padding: const EdgeInsets.only(top: 6),
-              child: Text(info[index]['message'].toString(),style: const TextStyle(fontSize: 15),),
+              child: Text(
+                info[index]['message'].toString(),
+                style: const TextStyle(fontSize: 15),),
+            ),
+            leading: CircleAvatar(
+              backgroundImage: NetworkImage(
+                info[index]['profilePic'].toString()
+              ),
             ),
           );
         }
         ),
       );
-  }
+  } 
 }

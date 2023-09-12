@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_ui/colors.dart';
+import 'package:whatsapp_ui/widgets/contacts_lists.dart';
 
 class MobileScreenLayout extends StatelessWidget {
   const MobileScreenLayout({super.key});
@@ -36,7 +37,7 @@ class MobileScreenLayout extends StatelessWidget {
             Tab(text: 'CALLS',),
           ])
         ),
-        body: const Text('Mobile view'),
+        body: const ContactsList(),
       ),
       );
   }
