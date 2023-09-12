@@ -13,6 +13,7 @@ class ContactsList extends StatelessWidget {
         children: [
           Expanded(
             child: ListView.builder(
+              shrinkWrap: true,
               itemCount: info.length,
               itemBuilder: (context, index) {
                 return Padding(
@@ -41,7 +42,7 @@ class ContactsList extends StatelessWidget {
               }
               ),
           ),
-            const Divider(color: dividerColor,)
+            const Divider(color: dividerColor, indent: 85,),
         ],
       ),
       );
