@@ -26,6 +26,10 @@ class ContactsList extends StatelessWidget {
                 info[index]['profilePic'].toString()
               ),
             ),
+            trailing: Text(
+              info[index]['time'].toString(),
+              style: const TextStyle(fontSize: 13, color: Colors.grey),
+            ),
           );
         }
         ),
