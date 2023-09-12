@@ -17,6 +17,9 @@ class ContactsList extends StatelessWidget {
               itemCount: info.length,
               itemBuilder: (context, index) {
                 return InkWell(
+                  onTap: () {
+                    
+                  },
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: ListTile(
