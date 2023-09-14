@@ -10,16 +10,20 @@ class WebScreenLayout extends StatelessWidget {
       body: Row(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Column(
-            children: [
-              //Web profile bar
-              // Web search bar
-              ContactsList(),
-            ],
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  //Web profile bar
+                  // Web search bar
+                  ContactsList(),
+                ],
+              ),
+            ),
           ),
           //Web Screen
           Container(
-            width: MediaQuery.of(context).size.width,
+            width: MediaQuery.of(context).size.width*0.75,
             decoration: const BoxDecoration(
               image: DecorationImage(image: AssetImage(
                 'assets/backgroundImage.png'
