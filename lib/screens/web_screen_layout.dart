@@ -6,7 +6,7 @@ class WebScreenLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Row(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -18,7 +18,16 @@ class WebScreenLayout extends StatelessWidget {
             ],
           ),
           //Web Screen
-          
+          Container(
+            width: MediaQuery.of(context).size.width,
+            decoration: const BoxDecoration(
+              image: DecorationImage(image: AssetImage(
+                'assets/backgroundImage.png'
+              ),
+              fit: BoxFit.cover,
+              )
+            ),
+          ),
         ],
       )
     );
