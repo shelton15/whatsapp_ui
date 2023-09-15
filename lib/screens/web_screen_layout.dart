@@ -29,11 +29,11 @@ class WebScreenLayout extends StatelessWidget {
                 'assets/backgroundImage.png'
               ),
               fit: BoxFit.cover,
-              )
+              ),
             ),
           ),
         ],
-      )
+      ),
     );
   }
 }
